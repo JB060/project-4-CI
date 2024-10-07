@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.deletion import CASCADE
+
 # Create your models here.
 
 
@@ -26,11 +26,11 @@ class Room (models.Model):
 
 
 class Message(models.Model):
-    User = models.ForeignKey(user, on_delete=models.CASCADE)
+    User = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.body[0.50]
+        return self.body[:150]
