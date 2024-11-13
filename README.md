@@ -52,4 +52,5 @@ This Django-based inventory management application allows users to efficiently m
    ```bash
    git clone <repository_url>
    cd inventory_management
-
+## Database Setup
+- By default, this application uses SQLite for local development. For production, it is configured to use PostgreSQL on Heroku.
