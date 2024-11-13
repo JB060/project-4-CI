@@ -58,8 +58,8 @@ This Django-based inventory management application allows users to efficiently m
 ## Environment Variables
 1. Create a .env file in the root directory and include the following configurations:
 - SECRET_KEY=your_secret_key
-DEBUG=True
-ALLOWED_HOSTS=127.0.0.1,localhost
-DATABASE_URL=postgres://<user>:<password>@<hostname>:<port>/<database>  # For Heroku PostgreSQL
-LOW_QUANTITY=5  # Customize the threshold for low inventory alerts
+- DEBUG=True
+- ALLOWED_HOSTS=127.0.0.1,localhost
+- DATABASE_URL=postgres://<user>:<password>@<hostname>:<port>/<database>  # For Heroku PostgreSQL
+- LOW_QUANTITY=5  # Customize the threshold for low inventory alerts
 
