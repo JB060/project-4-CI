@@ -121,12 +121,6 @@ A Django-based web application to manage and track inventory items, organize the
 
 ---
 
-## Testing
-
-All test cases for functionality and usability can be found in [TESTING.md](TESTING.md).
-
----
-
 ## Deployment
 
 ### Steps to Deploy on Heroku
