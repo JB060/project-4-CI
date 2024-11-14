@@ -141,8 +141,6 @@ Automated tests were written for critical components:
 - **Views**: Ensured views return the correct data and templates based on user permissions.
 - **Forms**: Tested form validation and field requirements.
 
-For detailed test cases, please refer to [TESTING.md](TESTING.md).
-
 ---
 
 ## Deployment
