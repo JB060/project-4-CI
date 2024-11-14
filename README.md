@@ -1,6 +1,9 @@
-# Inventory Management Application
+# Inventory Management System
 
-This Django-based inventory management application allows users to efficiently manage inventory items, categorize them, and receive alerts for low inventory levels. It features a responsive, user-friendly interface and is deployed on Heroku.
+A Django-based web application designed for efficient inventory management, helping users to track items, organize by 
+categories, and receive alerts for low stock levels. This application offers user registration, authentication, and a streamlined inventory dashboard.
+
+---
 
 ## Table of Contents
 
@@ -22,44 +25,37 @@ This Django-based inventory management application allows users to efficiently m
 
 ## Features
 
-- User registration, login, and logout functionality.
-- Inventory management with quantity tracking and category organization.
-- Low inventory alerts on the dashboard.
-- Full CRUD (Create, Read, Update, Delete) operations on inventory items.
-- Responsive UI built with Bootstrap and enhanced with Django Crispy Forms for optimized form rendering.
+- **User Authentication**: Secure sign-up, log-in, and log-out options.
+- **Inventory Dashboard**: Central view to manage and track items.
+- **Item Management**: Add, edit, and delete inventory items.
+- **Low Inventory Alerts**: Receive warnings when inventory items are running low.
+- **Category Management**: Group items by category for easy organization.
+
+---
 
 ## Technologies Used
 
-- **Backend**: Python, Django
-- **Frontend**: HTML, CSS (Bootstrap 5), Django Crispy Forms
-- **Database**: SQLite (development), PostgreSQL (production on Heroku)
-- **Deployment**: Heroku
-- **APIs**:
-  - **Django Crispy Forms**: Simplifies form layout and Bootstrap integration.
-  - **Bootstrap 5**: Provides a modern, responsive design.
+- **Django**: Backend framework for web development.
+- **Bootstrap**: CSS framework for responsive design.
+- **Crispy Forms**: Django app for rendering forms with Bootstrap.
+- **SQLite/PostgreSQL**: Database for storing user and inventory data.
+
+---
 
 ## Getting Started
 
 ### Prerequisites
 
-- Python 3.x
-- Git
-- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) (for deployment)
+- **Python 3.8+**
+- **pip** for managing Python packages
+- **Git** for version control
 
 ### Installation
 
-1. **Clone the repository:**
-   ```bash
-   git clone <repository_url>
-   cd inventory_management
-## Database Setup
-- By default, this application uses SQLite for local development. For production, it is configured to use PostgreSQL on Heroku.
+Clone the repository and install required packages:
+```bash
+git clone https://github.com/yourusername/inventory-management.git
+cd inventory-management
+pip install -r requirements.txt
 
-## Environment Variables
-1. Create a .env file in the root directory and include the following configurations:
-- SECRET_KEY=your_secret_key
-- DEBUG=True
-- ALLOWED_HOSTS=127.0.0.1,localhost
-- DATABASE_URL=postgres://<user>:<password>@<hostname>:<port>/<database>  # For Heroku PostgreSQL
-- LOW_QUANTITY=5  # Customize the threshold for low inventory alerts
 
