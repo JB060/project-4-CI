@@ -1,61 +1,151 @@
 # Inventory Management System
 
-A Django-based web application designed for efficient inventory management, helping users to track items, organize by 
-categories, and receive alerts for low stock levels. This application offers user registration, authentication, and a streamlined inventory dashboard.
+A Django-based web application to manage and track inventory items, organize them by categories, and receive alerts for low stock levels. This system allows users to register, authenticate, and access a personalized dashboard for efficient inventory management.
 
 ---
 
-## Table of Contents
+## User Experience (UX)
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Database Setup](#database-setup)
-  - [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [API Documentation](#api-documentation)
-- [Deployment on Heroku](#deployment-on-heroku)
-- [Testing](#testing)
-- [License](#license)
+### Strategy
+
+#### Project Goals
+- Develop a user-friendly inventory management application for personal or small business use.
+- Allow users to easily track inventory levels, organize items by category, and receive low-inventory alerts.
+
+#### User Goals
+- **Effortless item tracking**: Users should be able to add, edit, delete, and view items in their inventory.
+- **Category organization**: Users can categorize items for easier navigation and organization.
+- **Low inventory alerts**: Users receive warnings when items are running low to facilitate timely restocking.
+
+#### Strategy Table
+
+| Feature                | Importance | Viability |
+|------------------------|------------|-----------|
+| User authentication    | High       | High      |
+| Item CRUD operations   | High       | High      |
+| Low inventory alerts   | High       | High      |
+| Category management    | Medium     | High      |
+| Responsive design      | High       | High      |
+
+---
+
+### Scope
+
+#### User Stories
+
+1. As a user, I want to create an account so that I can securely log in to the app.
+2. As a user, I want to add items to my inventory so that I can keep track of stock levels.
+3. As a user, I want to categorize items to organize my inventory.
+4. As a user, I want to receive alerts when items are running low to stay informed about restocking needs.
+5. As a user, I want a dashboard that summarizes my inventory at a glance.
+
+---
+
+### Structure
+
+- **Navigation**: Simple navigation with links to key features (dashboard, add item, sign in/out).
+- **CRUD Operations**: Comprehensive item management options, including add, edit, delete, and view.
+- **User Authentication**: Secure access to manage inventory.
+
+---
+
+### Skeleton
+
+- **Home Page**: Welcomes users and prompts them to log in or sign up.
+- **Dashboard**: Main inventory management interface with a table of items.
+- **Inventory Forms**: Forms for adding, editing, and deleting items.
+- **Authentication Pages**: Separate pages for login, logout, and signup.
+
+---
+
+### Surface
+
+- **Color Scheme**: Uses Bootstrap Minty theme for a clean, user-friendly interface.
+- **Typography**: Readable and accessible fonts for a professional look.
+- **Layout**: Responsive layout using Bootstrap grid, optimized for desktop and mobile.
 
 ---
 
 ## Features
 
-- **User Authentication**: Secure sign-up, log-in, and log-out options.
-- **Inventory Dashboard**: Central view to manage and track items.
-- **Item Management**: Add, edit, and delete inventory items.
-- **Low Inventory Alerts**: Receive warnings when inventory items are running low.
-- **Category Management**: Group items by category for easy organization.
+### General
+- **Responsive Design**: Accessible on all devices with a clean, minimalistic interface.
+- **Error Messages**: Provides visual feedback for successful actions and alerts for low inventory.
+
+### Home Page
+- Introduces the app and allows users to log in or sign up.
+
+### Dashboard
+- Displays an organized view of all inventory items.
+- Allows for easy access to add, edit, or delete items.
+
+### Authentication Pages
+- **Login**: Authenticates existing users.
+- **Signup**: Allows new users to register.
+- **Logout**: Provides an option for users to log out securely.
+
+### Item Management Pages
+- **Add Item**: Form to add a new item to the inventory.
+- **Edit Item**: Allows users to update item information.
+- **Delete Item**: Removes an item from the inventory.
 
 ---
 
 ## Technologies Used
 
-- **Django**: Backend framework for web development.
-- **Bootstrap**: CSS framework for responsive design.
-- **Crispy Forms**: Django app for rendering forms with Bootstrap.
-- **SQLite/PostgreSQL**: Database for storing user and inventory data.
+### Languages Used
+- **HTML5**: Structure and layout of pages.
+- **CSS3**: Styling with Bootstrap framework.
+- **Python**: Core application logic with Django framework.
+
+### Libraries and Frameworks
+- **Django**: Backend web framework for app functionality.
+- **Bootstrap**: Frontend framework for styling and responsive design.
+- **Crispy Forms**: For rendering Django forms with Bootstrap styling.
+
+### Packages / Dependencies Installed
+- **Django**: Main web framework.
+- **Crispy Forms**: Enhances form styling with Bootstrap.
+- **Django Authentication**: Manages user authentication flows.
+
+### Database Management
+- **SQLite**: Local database for development.
+- **PostgreSQL** (optional): For production deployments.
+
+### Tools and Programs
+- **Visual Studio Code**: Development environment.
+- **Git**: Version control.
+- **Heroku**: For deployment.
+- **Postman**: For testing API endpoints.
+- **GitHub**: Version control and collaboration.
 
 ---
 
-## Getting Started
+## Testing
 
-### Prerequisites
+All test cases for functionality and usability can be found in [TESTING.md](TESTING.md).
 
-- **Python 3.8+**
-- **pip** for managing Python packages
-- **Git** for version control
+---
 
-### Installation
+## Deployment
 
-Clone the repository and install required packages:
-```bash
-git clone https://github.com/yourusername/inventory-management.git
-cd inventory-management
-pip install -r requirements.txt
+### Steps to Deploy on Heroku
+
+1. Create a Heroku account and install Heroku CLI.
+2. Clone this repository and navigate to the project folder.
+3. Run `heroku create` to create a new Heroku app.
+4. Push the project to Heroku with `git push heroku main`.
+5. Set environment variables and configure the database on Heroku.
+6. Run `heroku run python manage.py migrate` to set up the database.
+
+### Finished Product
+
+Once deployed, access the live application to manage inventory items efficiently.
+
+
+
+
+
+
 
 
