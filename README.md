@@ -121,6 +121,30 @@ A Django-based web application to manage and track inventory items, organize the
 
 ---
 
+## Testing
+
+The testing phase included a combination of manual and automated tests to ensure all functionality works as expected. 
+
+### Manual Testing
+
+Each feature was manually tested by simulating user interactions, including:
+1. **User Authentication**: Verified sign-up, login, and logout functionalities.
+2. **Inventory CRUD Operations**: Tested adding, editing, deleting, and viewing inventory items.
+3. **Low Inventory Alerts**: Confirmed alerts display for items at or below the minimum threshold.
+4. **Responsive Design**: Verified the application's compatibility across various screen sizes (desktop, tablet, and mobile).
+5. **Error Handling**: Checked for error messages in case of incorrect inputs (e.g., empty fields).
+
+### Automated Testing
+
+Automated tests were written for critical components:
+- **Models**: Validated data integrity and relationships, such as items linked to specific categories.
+- **Views**: Ensured views return the correct data and templates based on user permissions.
+- **Forms**: Tested form validation and field requirements.
+
+For detailed test cases, please refer to [TESTING.md](TESTING.md).
+
+---
+
 ## Deployment
 
 ### Steps to Deploy on Heroku
@@ -132,9 +156,12 @@ A Django-based web application to manage and track inventory items, organize the
 5. Set environment variables and configure the database on Heroku.
 6. Run `heroku run python manage.py migrate` to set up the database.
 
+---
+
 ### Finished Product
 
 Once deployed, access the live application to manage inventory items efficiently.
+
 
 
 
